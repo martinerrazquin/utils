@@ -102,6 +102,6 @@ class TestListDictBuilder(unittest.TestCase):
         x = ListDictBuilder({"X", "Y"}, raise_mismatch=False, fill_value=fill_dict)
 
         x.append({"Y": 3})
-        
+
         with self.assertRaises(KeyError):
             x.append({"X": 3})
